@@ -36,7 +36,7 @@ pipeline {
                         }
          }
 
-         stage('Build and push on Tomcat server local'){
+        */ stage('Build and push on Tomcat server local'){
                                  parallel{
                                      stage('Build') {
                                                  steps {
@@ -83,7 +83,7 @@ pipeline {
                               kubernetesDeploy(configs:"tomcatweb_k8s.yaml",kubeconfigId:"azure-kubeconfig")
 
                               }
-         }
+         }/*
 
 
 
